@@ -7,19 +7,14 @@ export default function App() {
 }
 
 function MyComponent() {
-  let username = "omkar";
-  let id = 1;
-  let list = ["mum", "del", "kyn"];
-  let obj = { id: 1, username: "omkar" };
+  const id1 = 100;
+  const background = "bg-info";
+
   return (
     <div>
-      {username}
-      {id}
-      <h1>{list}</h1>
-      <div>
-        {obj.id}
-        {obj.username}
-      </div>
+      <h1>interpolation {id1}</h1>
+      <h1 id={id1}> interpolation{id1}</h1>
+      <h1 className={background}>interpolation</h1>
     </div>
   );
 }
